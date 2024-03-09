@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --darkest: #1F2544;
+    --lest-purl: #F4EEFF;
+    --ler-purl: #DCD6F7;
+    --purl: #A6B1E1;
+    --dark-purl: #434975;
+
+  }
+body{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 300;
+    background-color: var(--purl);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*NAVBAR*/
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:  10px 15px;
+    overflow: none;
+    text-decoration: none;
+    background-color: var(--lest-purl);
+    transition: 0.5s ease-out;
+
+}
+.heading{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.5em;
+    position: relative; 
+}
+span h1{
+    font-weight: 300;
+    position:absolute;
+    transform:scale(1,0);
+    transform-origin: bottom;
+    transition: 500ms;
+    }
+    
+    span:hover > span{
+    transform:scale(1,0);
+    }
+    
+    span:hover h1{
+    transform:scale(1,1);
+    }
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.navlinks li {
+    padding: 5px 10px;
+}
+
+.navlinks li a {
+    font-size: 1.15em;
+    color: black;
+    text-decoration: none;
+}
+
+.navlinks li a:hover {
+    color: #555;
+}
+
+
+span{
+    cursor: pointer;
+    display: inline-grid;
+    place-items: center;
+    }
+    
+    span img{
+    width:30px;
+    position:absolute;
+    transform:scale(1,0);
+    transform-origin: bottom;
+    transition: 500ms;
+    }
+    
+    span > span{
+    transform:scale(1,1);
+    transform-origin: top;
+    transition: 500ms;
+    }
+    
+    span:hover > span{
+    transform:scale(1,0);
+    }
+    
+    span:hover img{
+    transform:scale(1,1);
+    }
