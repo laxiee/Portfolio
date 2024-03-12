@@ -19,6 +19,17 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+.heading{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.5em;
+    position: top;
+    vertical-align: top;
+     
+}
 
 /*NAVBAR*/
 .navbar{
@@ -26,23 +37,14 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding:  10px 15px;
+    padding: 10px 15px;
     overflow: none;
     text-decoration: none;
     background-color: var(--lest-purl);
     transition: 0.5s ease-out;
 
 }
-.heading{
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 1.5em;
-    position: relative; 
-}
+
 span h1{
     font-weight: 300;
     position:absolute;

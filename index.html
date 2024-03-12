@@ -16,20 +16,39 @@
     
 </head>
 <body>
-    <nav class="navbar">
-        <span class="headd"><span><a href="https://lakshya.fun" class="heading">Lakshya Saxena</a>
-        </span><h1>FUN BACCHA</h1></span>
-            <ul class="navlinks">
-                <span class="nav-link"><span><li><a href="#home">Home</a></li></span><img src="assets/home.svg"/></span>
-                <span class="nav-link"><span><li><a href="#portfolio">Portfolio</a></li></span><img src="assets/address-card.svg"/></span>
-                <span class="nav-link"><span><li><a href="#projects">Projects</a></li></span><img src="assets/project.svg"/></span>
-                <span class="nav-link"><span><li><a href="#about">About</a></li></span><img src="assets/user.svg"/></span>
-            </ul>
-            
-            
-            
-            
-        </nav>
+  <nav class="navbar">
+    <span class="headd">
+      <span>
+        <a href="https://lakshya.fun" class="heading">Lakshya Saxena</a>
+      </span>
+      <h1>FUN BACCHA</h1>
+    </span>
+    <div class="flex flex-col align-middle">
+    <!-- Hamburger icon for small screens -->
+    <button class="md:hidden hamburger flex justify-center items-center" aria-label="Open Menu">
+      <img src="assets/Hamburger_icon.svg" alt="Menu"/>
+    </button>
+    <!-- Navigation links -->
+    <ul class="navlinks">
+      <span class="nav-link">
+        <span><li><a href="#home">Home</a></li></span>
+        <img src="assets/home.svg" alt="Home"/>
+      </span>
+      <span class="nav-link">
+        <span><li><a href="#portfolio">Portfolio</a></li></span>
+        <img src="assets/address-card.svg" alt="Portfolio"/>
+      </span>
+      <span class="nav-link">
+        <span><li><a href="#projects">Projects</a></li></span>
+        <img src="assets/project.svg" alt="Projects"/>
+      </span>
+      <span class="nav-link">
+        <span><li><a href="#about">About</a></li></span>
+        <img src="assets/user.svg" alt="About"/>
+      </span>
+    </ul>
+    </div>
+  </nav>
         <section>
           <div style="background-color: #1F2544; color: #F4EEFF;" class="py-8">
             <div class="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
@@ -172,14 +191,10 @@
         
         
     <script>
-         function toggleNavbar() {
-    const navLinks = document.getElementById('nav-links');
-    if (navLinks.classList.contains('active')) {
-      navLinks.classList.remove('active');
-    } else {
-      navLinks.classList.add('active');
-    }
-  } 
+      document.querySelector('.navlinks').classList.toggle('hidden');
+        document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.navlinks').classList.toggle('hidden');
+  });
     </script>    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/psd.js/3.4.0/psd.js"></script>
 <script src="script.js"></script>
