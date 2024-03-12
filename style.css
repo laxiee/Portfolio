@@ -109,3 +109,8 @@ span{
     span:hover img{
     transform:scale(1,1);
     }
+.timeline-icon{
+    height: 45px;
+    padding: 0 10px;
+    padding-top: 10px; 
+}
