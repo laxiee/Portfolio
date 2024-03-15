@@ -27,6 +27,36 @@ function cycleHoverEffects() {
                 }
             }, 1200);  // Duration of the hover effect
         }, index * 3500); // Start next effect slightly after the previous one
+    
+    
+        document.querySelectorAll('.navbar .nav-link').forEach((link) => {
+            link.addEventListener('mouseover', () => {
+              let childSpan = link.querySelector('span > span');
+              let childImg = link.querySelector('img');
+              
+              if (childSpan) {
+                childSpan.style.transform = 'scale(1, 0)';
+            }
+
+            if (childImg) {
+                childImg.style.transform = 'scale(1, 1)';
+            }
+            });
+          
+            link.addEventListener('mouseout', () => {
+              let childSpan = link.querySelector('span > span');
+              let childImg = link.querySelector('img');
+              
+              if (childSpan) {
+                childSpan.style.transform = 'scale(1, 1)';
+            }
+
+            if (childImg) {
+                childImg.style.transform = 'scale(1, 0)';
+            }
+            });
+          });
+    
     });
 
     // Recursively call the function to cycle the effects forever
@@ -36,3 +66,12 @@ function cycleHoverEffects() {
 
 // Initial call to start the cycle
 cycleHoverEffects();
+
+// if (window.innerWidth < 768) {
+//     document.querySelector('.navlinks').classList.toggle('hidden');
+//   }
+//   document.querySelector('.hamburger').addEventListener('click', function() {
+//     document.querySelector('.navlinks').classList.toggle('open');
+//     document.querySelector('.hamburger').addEventListener('click', function() {
+// });
+// });
