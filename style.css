@@ -45,7 +45,7 @@ body{
 
 }
 
-span h1{
+.navbar span h1{
     font-weight: 300;
     position:absolute;
     transform:scale(1,0);
@@ -53,11 +53,11 @@ span h1{
     transition: 500ms;
     }
     
-    span:hover > span{
+.navbar span:hover > span{
     transform:scale(1,0);
     }
     
-    span:hover h1{
+.navbar span:hover h1{
     transform:scale(1,1);
     }
 
@@ -84,33 +84,33 @@ span h1{
 }
 
 
-span{
+.navbar span{
     cursor: pointer;
     display: inline-grid;
     place-items: center;
-    }
+}
+.navbar span:hover > span{
+transform:scale(1,0);
+}
+
+.navbar span:hover img{
+transform:scale(1,1);
+}
     
-    span img{
-    width:30px;
-    position:absolute;
-    transform:scale(1,0);
-    transform-origin: bottom;
-    transition: 500ms;
-    }
+.navbar span img{
+width:30px;
+position:absolute;
+transform:scale(1,0);
+transform-origin: bottom;
+transition: 500ms;
+}
+
+.navbar span > span{
+transform:scale(1,1);
+transform-origin: top;
+transition: 500ms;
+}
     
-    span > span{
-    transform:scale(1,1);
-    transform-origin: top;
-    transition: 500ms;
-    }
-    
-    span:hover > span{
-    transform:scale(1,0);
-    }
-    
-    span:hover img{
-    transform:scale(1,1);
-    }
 .timeline-icon{
     height: 45px;
     padding: 0 10px;
